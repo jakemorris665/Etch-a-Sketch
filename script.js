@@ -37,13 +37,13 @@ const clearBoard = function() {
 }
 
 const newBox = function() {
-    let choice = prompt("Choose a box dimension up to 100. For example, 36 will make a 36x36 grid.")
+    let choice = prompt("Choose a box dimension up to 36. For example, 36 will make a 36x36 grid.")
     if (choice) {
-        if (choice < 101) {
+        if (choice < 37) {
             currentColor = "black";
             resetBox();
             makeBox(choice); 
-        } else if (choice >100) {
+        } else if (choice > 36) {
             alert("That number was too large.");
             newBox();
         } else {
