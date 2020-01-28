@@ -1,0 +1,108 @@
+:root {
+    --rowNum: 5;
+    --colnum: 5;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.headerBox {
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    text-align: center;
+    background: red; 
+}
+
+.etchBorder {
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    background: red;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 2.4em;
+    width: 310px;
+    text-align: center;
+    background:rgb(255, 0, 0);
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 100px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+}
+
+li {
+    margin: 20px;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    border-radius: 15px;
+    background: white;
+}
+
+button:hover {
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgb(0, 0, 0);
+    transition:0.1s;
+}
+
+.Reset {
+    padding: 4px 50px 4px 50px;
+}
+
+.Clear {
+    padding: 4px 30px 4px;
+}
+
+.Dark {
+    padding: 4px 50px 4px 50px;
+}
+
+.GreyScale {
+    padding: 4px 30px 4px;
+}
+
+.Pick {
+    padding: 4px 30px 4px;
+}
+
+.Multi {
+    padding: 4px 30px 4px;
+}
+
+.buttonContainer {
+    width: 250px;
+    display: flex;
+    justify-content: left;
+    margin-right: 30px;
+}
+
+.gridBox {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    margin-bottom: 10%;
+    margin-top: 2%;
+    border:black 1px;
+    border-style: solid;
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(var(--rowNum), 1fr);
+    grid-template-rows: repeat(var(--colNum), 1fr);
+}

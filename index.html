@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Etch-a-sketch</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="makeBox(16)">
+   <div class="header" id="Header">
+    <div class="headerBox" id="HeaderBox">
+      <h1>Etch-a-sketch</h1> 
+    </div> 
+  </div>
+<div class="gridBox" id="GridBox">
+  <div class="etchBorder">
+    <div class="buttonContainer" id="ButtonContainer">
+  <ul>
+    <li><button id="reset" class="Reset" type="button" onclick="newBox()">Resize</button> </li>
+    <li><button id="clear" class="Clear" type="button" onclick="clearBoard()">Clear board</button></li>
+    <li><button id="dark" class="Dark" type="button" onclick="blackPen()">Black</button></li>
+    <li><button id="pick" class="Pick" type="button" onclick="choosePen()">Choose a color!</button></li>
+    <li><button id="greyScale" class="GreyScale" type="button" onclick="greyScale()">Black and white</button></li>
+    <li><button id="multi" class="Multi" type="button" onclick="rainbowPen()">Try a random color!</button></li>
+  </ul> 
+</div>
+<div class="container" id="Container"></div>
+</div>
+</div> 
+
+</body>
+<script src="script.js"></script>
+</html>
